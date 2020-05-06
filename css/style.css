@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'SFPro';
+  src: url('Fonts/SFPro/SFProDisplay-Light.woff2') format('woff2'),
+       url('Fonts/SFPro/SFProDisplay-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+
 .shadow{
 	background: #FFFFFF; /* Цвет фона */
     box-shadow: 0 0 20px rgba(0,0,0,0.32); /* Параметры тени */
@@ -30,7 +49,7 @@ progress::-webkit-progress-value{
 	border-radius: 10px;
 }
 ::-webkit-input-placeholder{
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'SFPro', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px; 
@@ -38,6 +57,9 @@ progress::-webkit-progress-value{
 	letter-spacing: -0.03em;
 	color: #646464;
 }
+
+input::-webkit-search-results-decoration {display: none;}
+
 .dropbtn {
 border: none;
 cursor: pointer;
@@ -64,6 +86,7 @@ left: 1110px;
 width: 276px;
 height: 265px;
 border-radius: 3px;
+overflow-x: hidden;
 }
 .dropdown-content a {
 color: black;
@@ -81,6 +104,8 @@ top: 100px;
 left: 517px;
 width: 109px;
 height: 40px;
+background-color: #4640DE; 
+border-radius: 4px;
 }
 .dropcatdown {
 position: absolute;
@@ -98,6 +123,7 @@ left: 54px;
 width: 1332px;
 height: 283px;
 border-radius: 4px;
+overflow-x: hidden;
 }
 .dropcatdown-content a {
 color: black;
@@ -106,6 +132,16 @@ text-decoration: none;
 display: block;
 }
 .showcat {display: block;}
+
+.dropdown_profile{
+	position: absolute; top: 217.21px; left: 100px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 16px; letter-spacing: -0.03em; width: 45px; height: 24.09px; color: #4640DE; margin: 0; padding: 0; line-height: 24px;
+}
+.search_btn{
+	width: 14px; height: 14px; cursor: pointer; text-align: center; background: url(logo/search.png); background-repeat: no-repeat; color: #F2F2F2; padding: 5px; position: absolute; top: 15px; left: 431px; border: none; font-size: 18px;
+}
+
+
+/*all blocks and texts*/
 
 .logo1{
 	position: absolute; width: 55.07px; height: 17.59px; left: 54px; top: 32px;
@@ -148,25 +184,25 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 	position: absolute; border: solid 1px #EAEAEA; width: 276px; top: 211.18px;
 }
 .div3{
-	position: absolute; top: 20.4px; left: 25px; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 18px; line-height: 21px; 
+	position: absolute; top: 20.4px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 21px; 
 }
 .div4{
-	position: absolute; top: 48.51px; left: 25px; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: normal; font-size: 18px; line-height: 21px; 
+	position: absolute; top: 48.51px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 18px; line-height: 21px; 
 }
 .div5{
-	position: absolute; top: 227.21px; left: 116px; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: normal; font-size: 16px; letter-spacing: -0.03em; width: 45px; height: 24.09px; color: #4640DE; right: 115px; margin: 0; padding: 0;
+	position: absolute; top: 227.21px; left: 116px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 16px; letter-spacing: -0.03em; width: 45px; height: 24.09px; color: #4640DE; right: 115px; margin: 0; padding: 0;
 }
 .div6{
 	position: absolute; top: 112.76px; left: 25px;
 }
 .div7{	
-	font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
+	font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
 }
 .div8{
 	position: absolute; top: 152.92px; left: 25px;
 }
 .div9{
-	font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
+	font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
 }
 .div10{
 	position: absolute; border: solid 1px #EAEAEA; width: 1332px; left: 54px; top: 96px;
@@ -175,13 +211,13 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 	position: absolute; border: solid 1px #EAEAEA; width: 1332px; left: 54px; top: 161px;
 }
 .div12{
-	position: absolute; left: 1151px; right: 237px; top: 119px; bottom: 1262px; font-family: 'Maven Pro', sans-serif; font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-style: normal; font-weight: bold;
+	position: absolute; left: 1151px; right: 237px; top: 119px; bottom: 1262px; font-family: 'SFPro', sans-serif; font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-style: normal; font-weight: bold;
 }
 .div13{
-	position: absolute; left: 1228px; right: 164px; top: 119px; bottom: 1262px; font-family: 'Maven Pro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold;
+	position: absolute; left: 1228px; right: 164px; top: 119px; bottom: 1262px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold;
 }
 .div14{
-	position: absolute; left: 1300px; right: 54px; top: 119px; bottom: 1262px; font-family: 'Maven Pro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold;
+	position: absolute; left: 1300px; top: 119px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold; width: 80px;
 }
 .div15{
 	position: absolute; background-color: #4640DE; border-radius: 4px;
@@ -193,7 +229,7 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 	position: absolute; top: 13px; left: 73px;
 }
 .div18{
-	position: absolute; top: 26px; left: 25px; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 21px; letter-spacing: -0.03em; font-weight: bolder;
+	position: absolute; top: 26px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 21px; letter-spacing: -0.03em; font-weight: bolder;
 }
 .div19{
 	position: absolute; left: 18px; top: 61px; padding: 0; margin: 0; width: 130px; height: 63px;
@@ -262,149 +298,149 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div41{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div42{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
 }
 .div43{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div44{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969
 }
 .div45{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div46{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div47{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div48{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div49{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
 }
 .div50{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
 }
 .div51{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
 }
 .div52{
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div53{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div54{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
 }
 .div55{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div56{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
 }
 .div57{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div58{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div59{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div60{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div61{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
 }
 .div62{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
 }
 .div63{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
 }
 .div64{
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div65{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div66{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 17.5px;line-height: 156.7%;top: 45px; text-align: justify-all;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 17.5px;line-height: 156.7%;top: 45px; text-align: justify-all;
 }
 .div67{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div68{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
 }
 .div69{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div70{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div71{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div72{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div73{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 38px; bottom: 21px; right: 324px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 38px; bottom: 21px; right: 324px;
 }
 .div74{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 180px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 180px; bottom: 21px; right: 308px;
 }
 .div75{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 320px; bottom: 21px; right: 56px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 320px; bottom: 21px; right: 56px;
 }
 .div76{
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div77{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div78{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
 }
 .div79{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div80{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
 }
 .div81{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div82{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div83{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div84{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div85{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
 }
 .div86{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
 }
 .div87{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
 }
 .div88{
 	position: absolute; top: 781px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
@@ -413,81 +449,818 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div90{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div91{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
 }
 .div92{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div93{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
 }
 .div94{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
 }
 .div95{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
 }
 .div96{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
 }
 .div97{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div98{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
 }
 .div99{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
 }
 .div100{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
 }
 .div101{
 	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
 }
 .div102{
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
 }
 .div103{	
-	position: absolute;font-family: 'Maven Pro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
 }
 .div104{
-	position: absolute; left: 79px; top: 405px; font-family: 'Maven Pro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
 }
 .div105{
-	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'Maven Pro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
 }
 .div106{
-	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div107{
-	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div108{
-	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'Maven Pro', sans-serif; font-style: normal; color: #969696;
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
 }
 .div109{
 	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
 		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
 }
 .div110{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 31px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 31px; bottom: 21px; right: 308px;
 }
 .div111{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
 }
 .div112{
-	position: absolute; font-family: 'Maven Pro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
 }
 .div113{
 	position: absolute; left: 1172px; top: 211px; padding: 0; margin: 0; width: 135px; height: 40px;
 }
+.logo_company{
+	position: absolute; top: 403px;left: 25px; width: 40px; height: 40px;background: url('logo/logo.png'); background-position: center;
+}
+/*header*/
+.class_header{
+	width: 1440px; height: 78px; position: absolute; left: 0%; right: 0%; top: 0%; bottom: 0%; background: #FFFFFF;
+}
+/**********blocks*********/
+.class_cube{
+	position: absolute; top: 180px; left: 54px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_pills{
+	position: absolute; top: 180px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_peoples{
+	position: absolute; top: 180px; left: 963px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_house{
+	position: absolute; top: 781px; left: 54px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_city{
+	position: absolute; top: 781px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_horses{
+	position: absolute; top: 781px; left: 963px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+:root {
+	--width-header-mobile: 375px;
+	--width-div37-mobile: 339px;
+	--height-div37-mobile: 38px;
+	
+
+
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+@media screen and (max-device-width: 1440px) {
+.m_div{
+	display: none;
+}
+.m_select{
+	display: none;
+}
+.username1{
+	display: none;
+}
+.mail1{
+	display: none;
+}
+.sp{
+	display: none;
+}
+.ps{
+	display: none;
+}
+.rmf{
+	display: none;
+}
+.tat{
+	display: none;
+}
+.prjcts{
+	display: none;
+}
+.catgrs{
+	display: none;
+}
+.logt{
+	display: none;
+}
+.txt_allcat{
+	display: none;
+}
+.dropdown-content2{
+	display: none;
+}
+}
+@media screen and (max-device-width: 800px) {
+.m_div{
+	display: none;
+}
+.m_select{
+	display: none;
+}
+
+}
+
+@media screen and (max-device-width: 500px) {
+html{
+	width: 375px;
+	height: 2136px;
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 375px;
+	height: 2136px;
+	margin: 0;
+	padding: 0;
+}
+nav{display: none;}
+.logo1{
+	position: absolute;
+	left: 284px;
+	top: 21px;
+}
+.logo2{
+	position: absolute;
+	left: 344px;
+	top: 21px;
+}
+.logo3{
+	position: absolute;
+	left: 351px;
+	top: 21px;
+}
+.logo4{
+	position: absolute;
+	left: 344px;
+	top: 28px;
+}
+.logo5{
+	position: absolute;
+	left: 351px;
+	top: 28px;
+}
+.div10{display: none;}
+.div11{display: none;}
+.class_header{
+	width: var(--width-header-mobile); height: 60px; position: absolute; left: 0%; right: 0%; top: 0%; bottom: 0%; background: #F2F2F2;
+}
+.div37{
+	position: absolute;
+	border: solid 3px #F2F2F2; 
+	background: #F2F2F2; border-radius: 4px; 
+	width:var(--width-div37-mobile); border-right: none; padding: 5px; 
+	height: var(--height-div37-mobile); outline: none; 	
+	left: 14px;
+	top: 78px;
+}
+.div38{
+	position: relative; display: flex; width: 100%;
+}
+.search_btn{
+	width: 14px; height: 14px; cursor: pointer; text-align: center; background: url(logo/search.png); background-repeat: no-repeat; color: #F2F2F2; padding: 5px; position: absolute; top: 14px; left: 323px; border: none; font-size: 18px;
+}
+.div12{
+	position: absolute;
+	width: 46px;
+	height: 20px;
+	top: 210px;
+	left: 18px;
+}
+.div13{
+	position: absolute; left: 95px; top: 210px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold; width: 46px; height: 20px;
+}
+.div14{
+	position: absolute;
+	top: 210px;
+	left: 175px;
+	width: 83px;
+	height: 20px;
+}
+.div77{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 112px; height: 27px; top: -50px;
+}
+.div78{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: -10px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div84{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div48{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div72{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div42{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: 20px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div41{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 241px; height: 36px; top: -50px;
+}
+.div79{
+	position: absolute; left: 90px; top: 358px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div80{
+	position: absolute; left: 90px; top: 381px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div81{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div82{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div83{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div85{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div86{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 126px; bottom: 21px; right: 308px;
+}
+.div87{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 271px; bottom: 21px; right: 308px;
+}
+.div49{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div50{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 126px; bottom: 21px; right: 308px;
+}
+.div51{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 271px; bottom: 21px; right: 308px;
+}
+.div45{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div46{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div47{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div43{
+	position: absolute; left: 90px; top: 358px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div44{
+	position: absolute; left: 90px; top: 381px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div48{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div72{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div65{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 296px; height: 27px; top: -50px;
+}
+.div66{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: 20px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div69{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div70{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div71{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div73{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div74{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 136px; bottom: 21px; right: 308px;
+}
+.div75{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 256px; bottom: 21px; right: 308px;
+}
+.dropcat{
+border: none;
+cursor: pointer;
+position: absolute;
+top: 145px;
+left: 14px;
+width: 109px;
+height: 40px;
+background-color: #4640DE; 
+border-radius: 4px;
+}
+.class_cube{
+	position: absolute; top: 996px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_peoples{
+	position: absolute; top: 1551px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_house{
+	position: absolute; top: 441px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_city{
+	display: none;
+}
+.class_horses{
+	display: none;
+}
+.class_pills{
+	display: none;
+}
+.img_cube{
+	width: 100%;
+}
+.profile{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.dropbtn {
+ 	display: none;
+}
+.dropdown-content {
+	display: none;
+}
+.btn_bus{
+	background-image: url('images/bus.png');
+	position: absolute;
+	top: 246px;
+	left: 18px;
+	width: 167px;
+	height: 49px;
+}
+.btn_cre{
+	background-image: url('images/cre.png');
+	position: absolute;
+	top: 246px;
+	left: 190px;
+	width: 167px;
+	height: 49px;
+}
+.btn_com{
+	background-image: url('images/com.png');
+	position: absolute;
+	top: 307px;
+	left: 18px;
+	width: 167px;
+	height: 49px;
+}
+.logo_company{
+	position: absolute; top: 360px;left: 25px; width: 40px; height: 40px;background: url('logo/logo.png'); background-position: center;
+}
+.dropcatdown-content{
+	display: none;
+}
+.mcat{
+	background-image: url('images/mcat.png');
+	position: absolute;
+	top: 368px;
+	left: 18px;
+	width: 339px;
+	height: 40px;
+}
+.m_div{
+	position: absolute; top: 370px; left:18px; display: block;
+}
+.m_select{
+	width: 339px; height: 40px; background-color: #E5E5E5; position: absolute; display: block;
+}
+.select_text{
+	font-family: 'SFPro', sans-serif; font-weight: normal; line-height: 19px; font-size: 16px; font-style: normal; letter-spacing: -0.03em; color: #646464;
+}
+.profile{
+	display: none;
+}
+/*.mbtn{
+	position: absolute;
+	width: 42px;
+	height: 12px;
+	top: 24px;
+	left: 18px;
+}
+.showMenu{display: block;}
+
+.m_drop{
+border: none;
+cursor: pointer;
+position: absolute;
+top: 24px;
+left: 18px;
+width: 44px;
+height: 12px;
+}
+.dropMenu-content {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+overflow: auto;
+box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+z-index: 1;
+top: 0%;
+left: 0%;
+width: 375px;
+height: 497px;
+overflow: hidden;
+background-color: #FFFFFF;
+}
+.dropMenuDown {
+position: absolute;
+display: inline-block;
+}*/
+
+.dropdown1 {
+position: absolute;
+display: block;
+top: 24px;
+left: 18px;
+}
+
+.dropdown-content1 {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+z-index: 1;
+left: -18px;
+top: 34px;
+}
+
+
+/*.dropdown-content1 a:hover {background-color: #ddd;}*/
+
+.dropdown1:hover .dropdown-content1 {display: block;}
+.div_all_cat{
+	width: 375px; height: 437px;
+}
+.username1{
+	position: absolute; top: 15px; left: 18px; 
+	font-family: 'Inter', sans-serif; font-style: normal; 
+	font-weight: bolder; font-size: 18px; 
+	line-height: 21px; display: block;
+}
+.mail1{
+	position: absolute; top: 43px; left: 18px; font-family: 'SFPro', sans-serif; 
+	font-style: normal; font-weight: lighter; font-size: 17px; 
+	line-height: 21px; display: block;
+}
+.sp{
+	position: absolute; top: 93px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: normal; font-size: 15px; 
+	line-height: 18px; width: 150px; height: 18px;
+	display: block;
+}
+.ps{
+	position: absolute; top: 133px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: normal; font-size: 15px; 
+	line-height: 18px; width: 150px; height: 18px;
+	display: block;
+}
+.rmf{
+	position: absolute; top: 205px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: 500; font-size: 15px; 
+	line-height: 18px; width: 130px; height: 18px;
+	display: block;
+}
+.tat{
+	position: absolute; top: 254px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: 500; font-size: 15px; 
+	line-height: 18px; width: 80px; height: 18px;
+	display: block;
+}
+.prjcts{
+	position: absolute; top: 303px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: 500; font-size: 15px; 
+	line-height: 18px; width: 55px; height: 18px;
+	display: block;
+}
+.catgrs{
+	position: absolute; top: 352px; left: 18px; font-family: 'Inter', sans-serif; 
+	font-style: normal; font-weight: 500; font-size: 15px; 
+	line-height: 18px; width: 72px; height: 18px;
+	display: block;
+}
+.logt{
+	position: absolute; top: 396px; left: 166px; font-family: 'SFPro', sans-serif; 
+	font-style: normal; font-weight: 500; font-size: 16px; 
+	line-height: 24px; width: 72px; height: 18px; color: blue;
+	display: block;
+}
+._21{
+	position: absolute; top: 93px; left: 341px; 
+	color: blue; font-family: 'SFPro', sans-serif; 
+	font-style: normal; font-weight: 500;font-size: 15px;
+	display: block;
+}
+
+.dropdown2 {
+position: absolute;
+display: block;
+top: 368px;
+left: 18px;
+width: 339px;
+height: 40px;
+}
+.dropdown2_1 {
+	position: absolute; top: 368px; left: 18px; 
+	border: solid 1px blue; width: 339px; 
+	height: 40px; border-radius: 4px;
+}
+.txt_allcat{
+	position: absolute; top: 10px; left: 12px; font-family: 'SFPro', sans-serif; 
+	color: #646464; font-size: 16px; font-style: normal; font-weight: normal;
+	display: block;
+}
+.down_img{
+	position: absolute; left: 317px; top: 18px;
+}
+.dropdown-content2 {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+z-index: 1;
+border: solid 1px transparent;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.14);
+border-radius: 4px;
+width: 339px;
+height: 295px;
+top: 46px; 
+left: -1px;
+}
+
+/*.dropdown-content1 a:hover {background-color: #ddd;}*/
+
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+.for_all_cat1{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 14px;
+	left: 12px;
+	display: block;
+}
+.for_all_cat2{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 45px;
+	left: 12px;
+	display: block;
+}
+.for_all_cat3{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 76px;
+	left: 12px;
+}
+.for_all_cat4{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 107px;
+	left: 12px;
+}
+.for_all_cat5{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 138px;
+	left: 12px;
+}
+.for_all_cat6{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 169px;
+	left: 12px;
+}
+.for_all_cat7{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 200px;
+	left: 12px;
+}
+.for_all_cat8{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 231px;
+	left: 12px;
+}
+.for_all_cat9{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #171F2E;
+	position: absolute;
+	top: 262px;
+	left: 12px;
+}
+.for_all_num1{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 14px;
+	right: 23px;
+}
+.for_all_num2{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 45px;
+	right: 23px;
+}
+.for_all_num3{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 76px;
+	right: 23px;
+}
+.for_all_num4{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 107px;
+	right: 23px;
+}
+.for_all_num5{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 138px;
+	right: 23px;
+}
+.for_all_num6{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 169px;
+	right: 23px;
+}
+.for_all_num7{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 200px;
+	right: 23px;
+}
+.for_all_num8{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 231px;
+	right: 23px;
+	display: block;
+}
+.for_all_num9{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px; 
+	line-height: 17px;
+	color: #4640DE;
+	position: absolute;
+	top: 262px;
+	right: 23px;
+}
+/*смена иконок в моб версии*/
+/*.linktoggler a:target,
+.dropdown-content2
+.linktoggler a:last-child {
+display: block;
+}
+.linktoggler a,
+.dropdown-content2
+.linktoggler a:target ~ a:last-child {
+display: none
+} */
