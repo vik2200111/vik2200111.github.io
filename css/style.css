@@ -1224,6 +1224,8 @@ padding: 0;
 	position: absolute; top: 26px; left: 31px; font-family: 'SFPro', sans-serif; 
 	color: #646464; font-size: 42px; font-style: normal; font-weight: normal;
 	display: block;
+	width: 800px;
+	width: 300px;
 	margin: 0;
 	padding: 0;
 }
