@@ -1221,18 +1221,17 @@ padding: 0;
 	padding: 0;
 }
 .txt_allcat{
-	position: absolute; top: 26px; left: 31px; font-family: 'SFPro', sans-serif; 
+	position: absolute; top: 0px; left: 0px; font-family: 'SFPro', sans-serif; 
 	color: #646464; font-size: 42px; font-style: normal; font-weight: normal;
 	display: block;
-	width: 800px;
-	width: 300px;
 	margin: 0;
 	padding: 0;
 }
 .down_img{
-	position: absolute; left: 842px; top: 47px;
+	/*position: absolute; left: 842px; top: 47px;
 	margin: 0;
-	padding: 0;
+	padding: 0;*/
+	display: none;
 }
 .dropdown-content2 {
 display: none;
