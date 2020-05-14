@@ -615,12 +615,60 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 .logo_mob{
 	display: none;
 }
+.down_img{
+	display: none;
+}
+.txt_allcat{
+	display: none;
+}
 }
 @media screen and (max-device-width: 800px) {
 .m_div{
 	display: none;
 }
 .m_select{
+	display: none;
+}
+.logo_mob{
+	display: none;
+}
+.m_div{
+	display: none;
+}
+.m_select{
+	display: none;
+}
+.username1{
+	display: none;
+}
+.mail1{
+	display: none;
+}
+.sp{
+	display: none;
+}
+.ps{
+	display: none;
+}
+.rmf{
+	display: none;
+}
+.tat{
+	display: none;
+}
+.prjcts{
+	display: none;
+}
+.catgrs{
+	display: none;
+}
+.logt{
+	display: none;
+}
+.txt_allcat{
+	display: none;
+}
+.dropdown-content2{
 	display: none;
 }
 .logo_mob{
@@ -1454,6 +1502,7 @@ padding: 0;
 	top: 681px;
 	right: 60px;
 }
+
 /*смена иконок в моб версии*/
 /*.linktoggler a:target,
 .dropdown-content2
