@@ -563,10 +563,27 @@ font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align:
 
 
 
-
-
-
-
+.dropdown2{
+	display: none;
+}
+.dropdown2_1{
+	display: none;
+}
+.dropdown-content2{
+	display: none;
+}
+.logo_mob{
+	display: none;
+}
+.dropdown-content1{
+	display: none;
+}
+.dropdown1{
+	display: none;
+}
+.logt{
+	display: none;
+}
 
 
 
